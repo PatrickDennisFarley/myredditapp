@@ -1,0 +1,11 @@
+<h1>Lotsa Deals</h1>
+
+<% @deals.each do |deal| %>
+  <ul>
+    <li> <%= deal.title %> </li>
+    <li><a href="<%= deal.url %>"><%= deal.url %></a></li>
+    <li> <%= deal.created_utc %> </li>
+    <li> <%= deal.link_flair_text %> </li>
+  </ul>
+
+<% end %>
